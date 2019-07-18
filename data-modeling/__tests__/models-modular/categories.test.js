@@ -1,18 +1,17 @@
 const Categories = require('../../models-modular/categories/categories.js');
-let categories = new Categories();
 
-// const supergoose = require('../supergoose.js');
+// let categories = new Categories();
+
+const supergoose = require('../supergoose.js');
 
 describe('Categories Model (Modular)', () => {
 
   // How will you handle both the happy path and edge cases in these tests?
 
   describe('categories Model', () => {
-  
-    // let categories;
-  
+    
     beforeEach(() => {
-      categories = new categories();
+      categories = new Categories();
     });
   
     // How might we repeat this to check on types?
