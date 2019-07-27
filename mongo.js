@@ -18,8 +18,8 @@ class Model {
     return newRecord.save();
   }
 
-  update(id, record) {
-    return this.schema.findByIdAndUpdate(id, {record});
+  update(_id, record) {
+    return this.schema.findByIdAndUpdate(_id, record, { new: true });
 
   }
 
